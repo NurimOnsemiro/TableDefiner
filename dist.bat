@@ -1,0 +1,1 @@
+echo D | COPY /y .\\readme.txt .\\build\\readme.txt | COPY /y .\\server.json .\\build\\server.json

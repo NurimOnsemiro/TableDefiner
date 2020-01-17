@@ -1,0 +1,26 @@
+{
+  "name": "table_definer",
+  "version": "1.0.0",
+  "description": "This is table definition generator",
+  "main": "index.js",
+  "author": "gshong",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "pkg-win-x64": "tsc && pkg ./ -t node10-win-x64 --output ./build/TableDefiner.exe && .\\dist.bat"
+  },
+  "bin": "./dist/index.js",
+  "devDependencies": {
+    "@types/node": "^13.1.6",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "excel4node": "^1.7.2",
+    "global": "^4.4.0",
+    "mariadb": "^2.1.5",
+    "moment": "^2.24.0",
+    "pkg": "^4.4.2"
+  }
+}
